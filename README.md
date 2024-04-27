@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+This project is a full-stack web application for managing blog posts. It includes both the backend and frontend components, implemented using Express and React respectively. The backend is built using the FastAPI framework, providing a RESTful API for CRUD operations on blog posts, categories, and tags. User authentication and authorization are implemented using JSON Web Tokens (JWT). The frontend is developed using React, providing various components/pages for interacting with the blog posts, including listing recent posts, displaying post details, creating/updating posts, browsing categories and tags, and managing user authentication.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Frontend:
 
-## Available Scripts
+Framework: React
+Components/Pages:
+Home Page: Displays a list of recent blog posts with pagination or infinite scrolling.
+Post Detail Page: Shows the full content of a blog post along with comments.
+Create/Update Post Page: Allows authenticated users to create or update blog posts, with options to select categories and tags.
+Category Listing Page: Displays a list of categories with the ability to filter blog posts by category.
+Tag Listing Page: Displays a list of tags with the ability to filter blog posts by tag.
+User Authentication Pages: Login, registration, and password reset pages.
+Client-side Form Validation: Implemented for input fields to ensure data integrity and consistency.
+Backend API Consumption: Consumes the backend API to perform CRUD operations on blog posts, categories, and tags.
 
-In the project directory, you can run:
+### Components/Pages
+- **NavComponent:** Common navigation component used across all pages.
+- **Home Page:** Displays a list of recent blog posts.
+- **Register Page:** Allows users to register.
+- **Login Page:** Allows users to log in.
+- **Create Blog Post Page:** Allows authenticated users to create a new blog post.
+- **Edit Blog Post Page:** Allows authenticated users to edit an existing blog post.
+- **View Blog Post Details Page:** Displays the full content of a blog post along with comments.
+- **User Page:** Displays user-specific information and actions.
+- **Post by Category Page:** Displays a list of blog posts filtered by category.
+- **Admin Category Page:** Allows admin users to manage categories.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Routing
+- Routes are managed using React Router.
+- Public routes are accessible to all users.
+- Private routes are accessible only to authenticated users.
+- Admin routes are accessible only to users with admin privileges.
